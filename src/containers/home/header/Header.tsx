@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container } from '../../../styles/baseStyles';
-import {HeaderMenu, HeaderTitle} from '../../../components/home/header';
+import {HeaderMenu, HeaderTitle, HeaderIcon} from '../../../components/home/header';
 
 const Wrapper = styled.header`
     height:327px;
@@ -14,6 +14,7 @@ const Header: React.SFC = () => {
             <Container>
                 <HeaderMenu/>
                 <HeaderTitle/>
+                <HeaderIcon/>
             </Container>
         </Wrapper>
     )
