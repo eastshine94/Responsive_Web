@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     margin: 40px 0 45px 0;
     & li{
         display: inline;
-        margin: 0 2px;
+        margin: 0 4px;
 
         & a {
             display: inline-block;
