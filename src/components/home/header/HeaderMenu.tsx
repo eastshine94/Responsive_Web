@@ -15,7 +15,7 @@ const Wrapper = styled.div`
             color: #ccc;
         }
 
-        ${({theme})=>theme.media.desktop`
+        ${({theme})=>theme.media.W1220`
             padding-right: 15px;
         `}
     }

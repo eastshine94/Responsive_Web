@@ -74,10 +74,10 @@ const HeaderIcon:React.SFC = () => {
     return(
         <Wrapper>
             <ul>
-                <li><a href="#"><i className="fa fa-html5" aria-hidden="true"></i><span>HTML5</span></a></li>
-                <li><a href="#"><i className="fa fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                <li><a href="#" onClick={onFacebook}><i className="fa fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a></li>
-                <li><a href="#" onClick={onTwitter}><i className="fa fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
+                <li><a href="https://velog.io/@eastshine94"><i className="fa fa-blog" aria-hidden="true"></i><span>Blog</span></a></li>
+                <li><a href="https://github.com/eastshine94"><i className="fab fa-github" aria-hidden="true"></i><span>Github</span></a></li>
+                <li><a href="#" onClick={onFacebook}><i className="fab fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a></li>
+                <li><a href="#" onClick={onTwitter}><i className="fab fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
             </ul>
         </Wrapper>
     );

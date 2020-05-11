@@ -35,7 +35,11 @@ const Wrapper = styled.div`
             box-shadow: 0 0 0 3px rgba(71,154,191,0.9) inset,
             0 0 0 100px rgba(0,0,0,0.1) inset;
         }
+        ${({theme})=>theme.media.W1220`
+            right: 10px;
+        `}
     }
+    
     
 `;
 
@@ -48,7 +52,7 @@ const SubTitleBlock:React.FC<InjectedProps> = (props) => {
     const btnIcon = baseStore.visibleMenu ? "fa-angle-up" : "fa-angle-down";
     return(
         <Wrapper>
-            <h2>옆 버튼을 클릭해보세요.</h2>
+            <h2>반응형 웹 사이트</h2>
             <a href="#" onClick={onBtn}>
                 <i className={`fa ${btnIcon}`}/>
                 <SU>전체메뉴 보기</SU>
