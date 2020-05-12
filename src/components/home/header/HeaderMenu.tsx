@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import mediaSize from '../../../styles/mediaSize';
 const Wrapper = styled.div`
     
     text-align: right;
@@ -14,10 +14,9 @@ const Wrapper = styled.div`
         &:hover {
             color: #ccc;
         }
-
-        ${({theme})=>theme.media.W1220`
+        @media only screen and (max-width: ${mediaSize.W1220}){
             padding-right: 15px;
-        `}
+        }
     }
 `;
 

@@ -5,7 +5,7 @@ import {inject, observer} from 'mobx-react';
 import { STORES } from '../../../constants';
 import BaseStore from '../../../stores/Base'
 import { SU } from '../../../styles/IR';
-
+import mediaSize from '../../../styles/mediaSize';
 interface InjectedProps {
     [STORES.BASE_STORE] ?: BaseStore;
 }
@@ -35,12 +35,19 @@ const Wrapper = styled.div`
             box-shadow: 0 0 0 3px rgba(71,154,191,0.9) inset,
             0 0 0 100px rgba(0,0,0,0.1) inset;
         }
-        ${({theme})=>theme.media.W1220`
-            right: 10px;
-        `}
+        
+
     }
-    
-    
+    @media only screen and (max-width: ${mediaSize.W1220}){
+        & a{
+            right: 10px;
+        }
+    }
+    @media only screen and (max-width: ${mediaSize.W600}){
+        & a{
+            display: none;
+        }
+    }
 `;
 
 const SubTitleBlock:React.FC<InjectedProps> = (props) => {

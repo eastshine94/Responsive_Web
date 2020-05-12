@@ -1,2 +1,2 @@
 export {default as GlobalStyle} from './globalSetting';
-export {default as themes} from './themes';
+export {default as sizes} from './mediaSize';

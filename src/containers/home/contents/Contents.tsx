@@ -1,30 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Container } from '../../../styles/baseStyles';
+import {LeftContents, CenterContents, RightContents} from '../../../components/home/contents';
+import { SU } from '../../../styles/IR';
+import mediaSize from '../../../styles/mediaSize';
+const Wrapper = styled.main`
+    ${Container}{
+        border-left: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+        @media only screen and (max-width:${mediaSize.W1220}){
+            border: 0;
+        }
+    }
+`;
 
 const Contents: React.SFC = () => {
     return (
-        <main>
-            <section>
-                <h2>반응형 사이트 컨텐츠</h2>
-                <section>
-                    <h3>반응형 사이트 왼쪽 컨텐츠</h3>
-                    <article><h4>반응형 사이트 왼쪽컨텐츠1</h4></article>
-                    <article><h4>반응형 사이트 왼쪽컨텐츠2</h4></article>
-                    <article><h4>반응형 사이트 왼쪽컨텐츠3</h4></article>
-                </section>
-                <section>
-                    <h3>반응형 사이트 가운데 컨텐츠</h3>
-                    <article><h4>반응형 사이트 가운데 컨텐츠1</h4></article>
-                    <article><h4>반응형 사이트 가운데 컨텐츠2</h4></article>
-                    <article><h4>반응형 사이트 가운데 컨텐츠3</h4></article>
-                </section>
-                <section>
-                    <h3>반응형 사이트 오른쪽 컨텐츠</h3>
-                    <article><h4>반응형 사이트 오른쪽컨텐츠1</h4></article>
-                    <article><h4>반응형 사이트 오른쪽컨텐츠2</h4></article>
-                    <article><h4>반응형 사이트 오른쪽컨텐츠3</h4></article>
-                </section>
-            </section>
-        </main>
+        <Wrapper>
+            <Container>
+                <h2><SU>반응형 사이트 컨텐츠</SU></h2>
+                <LeftContents/>
+                <CenterContents/>
+                <RightContents/>
+            </Container>
+        </Wrapper>
     )
 }
 

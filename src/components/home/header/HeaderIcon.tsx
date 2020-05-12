@@ -1,59 +1,61 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {MouseEvent} from 'react';
 import styled from 'styled-components';
-
+import mediaSize from '../../../styles/mediaSize';
 const Wrapper = styled.div`
     text-align: center;
     margin: 40px 0 45px 0;
-    & li{
+    & ul li{
         display: inline;
         margin: 0 4px;
-
-        & a {
-            display: inline-block;
-            background-color: #3192bf;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            color: #fff;
-            font-size: 35px;
-            line-height: 60px;
-            position: relative;
-            transition: all 0.3s ease;
-            &:hover {
-                box-shadow: 0 0 0 3px rgba(75,154,191,0.9) inset,
-                0 0 0 100px rgba(0, 0, 0, 0.1) inset;
-            }
-            &:hover span{
-                opacity: 1;
-                top: -33px;
-            }
-            & span{
-                position: absolute;
-                left: 50%;
-                top: -40px;
-                transform: translate(-50%);
-                font-size: 12px;
-                line-height: 1.6;
-                background: #3192bf;
-                padding: 3px 9px;
-                border-radius: 6px 0;
-                opacity: 0;
-                transition: all 0.3s ease;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: 50%;
-                    bottom: -5px;
-                    border-top: 5px solid #3192bf;
-                    border-left: 5px solid transparent;
-                    border-right: 5px solid transparent;
-                }
-            }
-        }
+    }
+    @media only screen and (max-width: ${mediaSize.W600}){
+        display: none;        
     }
 `;
-
+const Icon = styled.a`
+    display: inline-block;
+    background-color: #3192bf;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 35px;
+    line-height: 60px;
+    position: relative;
+    transition: all 0.3s ease;
+    &:hover {
+        box-shadow: 0 0 0 3px rgba(75,154,191,0.9) inset,
+        0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+    }
+    &:hover span{
+        opacity: 1;
+        top: -33px;
+    }
+    & span{
+        position: absolute;
+        left: 50%;
+        top: -40px;
+        transform: translate(-50%);
+        font-size: 12px;
+        line-height: 1.6;
+        background: #3192bf;
+        padding: 3px 9px;
+        border-radius: 6px 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            border-top: 5px solid #3192bf;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+    }
+        
+`;
 
 
 const HeaderIcon:React.SFC = () => {
@@ -74,10 +76,10 @@ const HeaderIcon:React.SFC = () => {
     return(
         <Wrapper>
             <ul>
-                <li><a href="https://velog.io/@eastshine94"><i className="fa fa-blog" aria-hidden="true"></i><span>Blog</span></a></li>
-                <li><a href="https://github.com/eastshine94"><i className="fab fa-github" aria-hidden="true"></i><span>Github</span></a></li>
-                <li><a href="#" onClick={onFacebook}><i className="fab fa-facebook-square" aria-hidden="true"></i><span>Facebook</span></a></li>
-                <li><a href="#" onClick={onTwitter}><i className="fab fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
+                <li><Icon href="https://velog.io/@eastshine94"><i className="fa fa-blog" aria-hidden="true"/><span>Blog</span></Icon></li>
+                <li><Icon href="https://github.com/eastshine94"><i className="fab fa-github" aria-hidden="true"/><span>Github</span></Icon></li>
+                <li><Icon href="#" onClick={onFacebook}><i className="fab fa-facebook-square" aria-hidden="true"/><span>Facebook</span></Icon></li>
+                <li><Icon href="#" onClick={onTwitter}><i className="fab fa-twitter" aria-hidden="true"></i><span>twitter</span></Icon></li>
             </ul>
         </Wrapper>
     );
