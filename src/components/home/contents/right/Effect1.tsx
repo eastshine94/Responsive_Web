@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import BlockFrame, { BlockWrapper } from '../frame/BlockFrame';
+const Wrapper = styled(BlockWrapper)`
 
-const Wrapper = styled.article`
-    padding: 15px;
-    border-bottom: 1px solid #dbdbdb;
 `;
 
 const Effect1:React.SFC = () => {
     return(
         <Wrapper>
-            <h4>반응형 사이트 오른쪽 컨텐츠1</h4>
+            <BlockFrame col_title="Effect1" col_desc="이 곳은 설명 부분입니다.">
+                <div></div>
+            </BlockFrame>
         </Wrapper>
     );
 }
