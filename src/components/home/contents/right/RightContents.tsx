@@ -12,6 +12,7 @@ const Wrapper = styled.section`
         position:static;
         width: 100%;
         border-top: 1px solid #dbdbdb;
+        display: flex;
     }
 `;
 

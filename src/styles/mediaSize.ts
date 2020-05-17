@@ -9,7 +9,7 @@ interface MediaSize {
 }
 const sizes: MediaSize = {
     W1220: "1220px",
-    W1024: "768px",
+    W1024: "1024px",
     W960: "960px",
     W768: "768px",
     W600: "600px",

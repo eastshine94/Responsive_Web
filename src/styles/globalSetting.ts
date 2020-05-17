@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
        font-size: 13px;
        font-weight: normal;
     }
+    /* 버튼 초기화 */
+    button {
+      border: 0;
+    }
 
     /* 테두리 초기화 */
     img, fieldset {
