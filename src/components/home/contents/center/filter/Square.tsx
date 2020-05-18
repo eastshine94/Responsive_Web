@@ -132,8 +132,8 @@ const Square: React.FC = () => {
     const [visible, setVisible] = useState(false);
     const renderImages = images.map((image,i) => {
         return(
-            <Box>
-                <img src={image.src} alt={`img${i}`} key={`image${i}`} onClick={() => {
+            <Box key={i}>
+                <img src={image.src} alt={`img${i}`} onClick={() => {
                     setIdx(i);
                     setVisible(true);
                 }}/>

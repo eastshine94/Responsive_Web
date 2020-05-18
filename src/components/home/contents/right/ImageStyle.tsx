@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ImageStyle = styled.figure`
     overflow: hidden;
     & img{
-        width: 98.5%;
+        width: 100%;
         display: block;
     }
 `;

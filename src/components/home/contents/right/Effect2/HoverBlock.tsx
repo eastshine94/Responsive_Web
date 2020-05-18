@@ -50,7 +50,7 @@ const Wrapper = styled.div`
     figcaption {
         width: 60%;
         color: #fff;
-        font-size: 20px;
+        font-size: 25px;
         font-family: "Abel", sans-serif;
         font-weight: bold;
         background: rgba(0,0,0,0.6);

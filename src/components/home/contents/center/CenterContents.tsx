@@ -4,7 +4,7 @@ import { Slick, Filter, VideoBlock } from '.';
 import { SU } from '../../../../styles/IR';
 import mediaSize from '../../../../styles/mediaSize';
 const Wrapper = styled.section`
-    min-height: 1300px;
+    min-height: 1350px;
     overflow: hidden;
     margin-right: 250px;
     border-right: 1px solid #dbdbdb;
