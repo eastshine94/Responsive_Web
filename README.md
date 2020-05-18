@@ -4,15 +4,11 @@
 
 ## 1. 개요
 
-------------
-
 - [https://wtss.tistory.com/](https://wtss.tistory.com/)의 강의를 따라하며 반응형 웹 사이트를 제작하였습니다.
   
 - 강의의 내용을 React와 StyledComponent로 구현하였습니다.
 
 ## 2. 목적
-
-------------
 
 - 다양한 미디어 환경(데스크탑, 테블릿, 모바일 등)을 고려한 웹 사이트를 제작해본다.
 
@@ -24,7 +20,6 @@
   
 ## 3. 화면 구성
 
-------------
 화면은 다음과 같이 구성되어 있습니다.
 
 <img src="https://user-images.githubusercontent.com/41350459/82223641-dd2ddc80-995d-11ea-806b-2ee6f1d5b200.png" alt="top"/>
@@ -66,28 +61,23 @@
 - 오른쪽 컨텐츠는 transform을 이용하여 hover 효과를 주었습니다.
 
 
-
 ## 4. 해상도에 따른 구조 변화
-
-------------
 
 미디어 해상도에 따라 다음과 같이 웹 구조가 변경됩니다.
 
 ### 1. 960px ~
 
-<img src="https://user-images.githubusercontent.com/41350459/82219679-94275980-9958-11ea-893d-6ea0475fa993.png" alt="structure1" width="80%" height="500px"/>
+<img src="https://user-images.githubusercontent.com/41350459/82219679-94275980-9958-11ea-893d-6ea0475fa993.png" alt="structure1" width="50%" height="500px"/>
 
 
 ### 2. 768px ~ 960px
 
-<img src="https://user-images.githubusercontent.com/41350459/82219692-98537700-9958-11ea-902c-2847116dd973.png" alt="structure2" width="80%" height="500px"/>
+<img src="https://user-images.githubusercontent.com/41350459/82219692-98537700-9958-11ea-902c-2847116dd973.png" alt="structure2" width="50%" height="500px"/>
 
 ### 3. 600px ~ 768px
 
-<img src="https://user-images.githubusercontent.com/41350459/82219709-9db0c180-9958-11ea-9eae-e9b0ef5d6471.png" alt="structure3" width="80%" height="500px"/>
+<img src="https://user-images.githubusercontent.com/41350459/82219709-9db0c180-9958-11ea-9eae-e9b0ef5d6471.png" alt="structure3" width="50%" height="500px"/>
 
 ### 4. 0px ~ 600px
 
-<img src="https://user-images.githubusercontent.com/41350459/82219715-9f7a8500-9958-11ea-8508-766957b423a6.png" alt="structure4" width="80%" height="500px"/>
-
-
+<img src="https://user-images.githubusercontent.com/41350459/82219715-9f7a8500-9958-11ea-8508-766957b423a6.png" alt="structure4" width="50%" height="500px"/>
