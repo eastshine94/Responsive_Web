@@ -6,13 +6,13 @@
 
 - [https://wtss.tistory.com/](https://wtss.tistory.com/)의 강의를 따라하며 반응형 웹 사이트를 제작하였습니다.
   
-- 강의의 내용을 React와 StyledComponent로 구현하였습니다.
+- 강의의 내용을 React와 styled-components로 구현하였습니다.
 
 ## 2. 목적
 
 - 다양한 미디어 환경(데스크탑, 테블릿, 모바일 등)을 고려한 웹 사이트를 제작해본다.
 
-- Styled Components를 활용하여 CSS 코드를 재사용한다.
+- styled-components를 활용하여 CSS 코드를 재사용한다.
 
 - CSS3를 활용하여 다양한 이펙트를 만들어본다.
 
@@ -42,11 +42,11 @@
 
 ------------
 
-<img src="https://user-images.githubusercontent.com/41350459/82227401-a9a18100-9962-11ea-977a-842a900e9cb0.png" alt="mid2"/>
+<img src="https://user-images.githubusercontent.com/41350459/82291337-c336dd00-99e3-11ea-8384-86d645b2b1fa.png" alt="mid2"/>
 
 - 왼쪽 컨텐츠는 한 줄효과와 두 줄 효과가 적용된 게시판 영역입니다.
 
-- 가운데 컨텐츠는 마우스를 오버 시, 각기 다른 filter 효과를 볼 수 있습니다.
+- 가운데 컨텐츠는 마우스를 오버 시, 각기 다른 filter 효과를 볼 수 있습니다. 또한, 그림 클릭 시 LightBox가 등장합니다.
 
 - 오른쪽 컨텐츠는 transform을 이용하여 hover 효과를 주었습니다.
 
