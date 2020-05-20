@@ -5,18 +5,21 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     text-align: center;
     padding: 30px 50px;
+    & ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     & li {
-        display: inline;
         padding: 0 7px 0 10px;
-        white-space: nowrap;
         position: relative; 
         &::before {
             content: '';
             width: 1px;
-            height: 14px;
+            height: 16px;
             background-color: #dbdbdb;
             position: absolute;
-            top: 0;
+            top: 2px;
             left: 3px;
         }
         &:first-child:before{
